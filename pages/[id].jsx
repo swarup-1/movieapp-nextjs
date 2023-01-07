@@ -1,10 +1,8 @@
 import {
   Box,
-  chakra,
   Container,
   Stack,
   Text,
-  Image,
   Flex,
   VStack,
   Button,
@@ -12,9 +10,9 @@ import {
   SimpleGrid,
   StackDivider,
   useColorModeValue,
-  VisuallyHidden,
   List,
   ListItem,
+  Image,
 } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import React from 'react'
@@ -50,9 +48,9 @@ const Movie = ({singleMovie}) => {
               py={{ base: 18, md: 24 }}>
               <Flex>
           <div>
-            <img src={Images[0]} alt="" width="350px" style={{margin:"5px"}} />
-            <img src={Images[1]} alt="" width="350px" style={{margin:"5px"}} />
-            <img src={Images[2]} alt="" width="350px" style={{margin:"5px"}} />
+            <Image src={Images[0]} alt="" width="350px" style={{margin:"5px"}} />
+            <Image src={Images[1]} alt="" width="350px" style={{margin:"5px"}} />
+            <Image src={Images[2]} alt="" width="350px" style={{margin:"5px"}} />
           </div>
               </Flex>
               <Stack spacing={{ base: 6, md: 10 }}>

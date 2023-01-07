@@ -1,6 +1,5 @@
-import Image from 'next/image'
 import React from 'react'
-import { Card, CardBody, CardFooter, Heading, Stack, Text } from '@chakra-ui/react'
+import { Card, CardBody, CardFooter, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import { Button } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 
@@ -16,7 +15,7 @@ const Cards = (props) => {
   return (
     <div>
         <Card maxW='sm' onClick={goSingle} >
-            <img src={Poster} alt="Poster Not Found" />
+            <Image src={Poster} alt="Poster Not Found" />
             <CardBody>
               <Stack mt='6' spacing='3'>
                 <Heading size='md'>{Title}</Heading>

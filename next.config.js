@@ -1,16 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   images: {
-    remotePatterns: [
-      {
-        protocol: 'http',
-        hostname: 'ia.media-imdb.com',
-        port: '',
-        pathname: '/images/M/**',
-      },
-    ],
-  },
+    unoptimized: true,
+  }
 
 }
 

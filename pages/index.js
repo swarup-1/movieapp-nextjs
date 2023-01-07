@@ -18,7 +18,7 @@ export default function Home({movies}) {
       <div>
         <SimpleGrid gap="50px" templateColumns='repeat(auto-fill, minmax(300px, 1fr))'>
           {movies.map((el)=>
-            <Cards {...el} />
+            <Cards key={el.id} {...el} />
           )}
         </SimpleGrid>
       </div>
